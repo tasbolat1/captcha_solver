@@ -137,7 +137,7 @@ class ImageCaptcha(_Captcha):
             im = Image.new('L', (w , h ), background)
             Draw(im).text((0, 0), c, font=font, fill=color)
             im = ImageOps.invert(im)
-            im = im.rotate(random.uniform(-30, 30), Image.BICUBIC, expand=True)
+            im = im.rotate(random.uniform(-45, 45), Image.BICUBIC, expand=True)
             im = im.crop(im.getbbox())
             im = ImageOps.invert(im)
             im = make_28(im)
@@ -153,7 +153,7 @@ class ImageCaptcha(_Captcha):
 
 
         text_width = sum([im.size[0] for im in images])
-        offset_init = random.randint(0, 10)
+        offset_init = random.randint(-10, 10)
         left_over = self._width-text_width - 2*offset_init
 
         if left_over < 0:
@@ -198,7 +198,7 @@ class ImageCaptcha(_Captcha):
         color = (28)
         im = self.create_captcha_image(chars, color, background)
 
-        dot_noise_size = random.randint(200,600)
+        dot_noise_size = random.randint(600,1000)
         self.create_noise_dots(im, color, width=1, number=dot_noise_size)
         im = self.create_noise_curve(im)
         

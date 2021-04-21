@@ -22,12 +22,19 @@ sequences = []
 start = time.time()
 for i in tqdm.tqdm( range(N) ):
 	
-	seq = seq_generator()
+	decider = np.random.gamma(2, 2.0)
+	if decider >= 1.8:
+		random_size = 8
+	elif decider >= 1:
+		random_size = 7
+	else:
+		random_size = 6
+
+	seq = seq_generator(random_size)
 
 	data = captcha_generator.generate(seq)
-	
 	captcha =  Image.open(data)
-	captcha.save(f"../data3/{i}.jpg", "JPEG")
+	captcha.save(f'../data3/{i}.jpg', "JPEG")
 	#np.save(f'{save_dir}/{i}', captcha)
 	sequences.append([i, seq])
 	
