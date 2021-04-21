@@ -14,7 +14,7 @@ def seq_generator(size=8, chars=string.ascii_uppercase + string.digits):
 
 captcha_generator = ImageCaptcha(width=140, height=30, font_sizes=[25], fonts=['calibri.ttf'])
 
-save_dir = '../data3/test'
+save_dir = '../data3/'
 N = 10
 
 sequences = []
@@ -26,8 +26,9 @@ for i in tqdm.tqdm( range(N) ):
 
 	data = captcha_generator.generate(seq)
 	
-	captcha = np.array( Image.open(data), dtype=np.uint8 )
-	np.save(f'{save_dir}/{i}', captcha)
+	captcha =  Image.open(data)
+	captcha.save(f"../data3/{i}.jpg", "JPEG")
+	#np.save(f'{save_dir}/{i}', captcha)
 	sequences.append([i, seq])
 	
 
