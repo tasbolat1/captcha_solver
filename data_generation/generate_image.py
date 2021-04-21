@@ -23,9 +23,9 @@ start = time.time()
 for i in tqdm.tqdm( range(N) ):
 	
 	decider = np.random.gamma(2, 2.0)
-	if decider >= 1.8:
+	if decider >= 1.3:
 		random_size = 8
-	elif decider >= 1:
+	elif decider >= 0.8:
 		random_size = 7
 	else:
 		random_size = 6
