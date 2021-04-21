@@ -1,0 +1,12 @@
+.ipynb_checkpoints
+preprocessed/*.npz
+downsampled/*.npz
+
+data/
+data2/
+
+data/**/*.npy
+data/**/*.npy
+
+learning/models/*.pt
+learning/models/*.pt
