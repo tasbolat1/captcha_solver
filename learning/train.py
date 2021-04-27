@@ -71,18 +71,19 @@ for epoch in range(1, epochs+1):
   net.train()
   
   train_loss, train_correct, train_total = 0, 0, 0
-  batch_size = args.batch_size
-  h = net.init_hidden(batch_size)
+  #batch_size = args.batch_size
+  #h = net.init_hidden(batch_size)
   
   # for each batch of training examples
   for batch_index, (inputs, targets) in enumerate(train_loader):
     
       inputs = inputs.to(device)
-      h = tuple([each.data for each in h])
+      
       
       batch_size, channels, height, width = inputs.shape
       #print(batch_size, channels, height, width)
-      
+      h = net.init_hidden(batch_size)
+      h = tuple([each.data for each in h])
       # reshape inputs: NxCxHxW -> WxNx(HxC)
       inputs = (inputs
                 .permute(3, 0, 2, 1)
