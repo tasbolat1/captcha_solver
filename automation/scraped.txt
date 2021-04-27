@@ -1,0 +1,1060 @@
+<html lang="en"><head><meta charset="utf-8"/><title>Alan-Trade | Электронная торговая площадка</title><base href="/"/><link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet"/><meta content="width=device-width,initial-scale=1" name="viewport"/><!--    <link rel="icon" type="image/x-icon" href="favicon.ico">--><link href="styles.6809de23bb1b8ca8ae83.bundle.css" rel="stylesheet"/><style></style><style>.wrapper[_ngcontent-c1]{display:-webkit-box;display:-ms-flexbox;display:flex}.wrapper[_ngcontent-c1]   .content[_ngcontent-c1]{-webkit-box-flex:1;-ms-flex:1;flex:1;-webkit-box-sizing:border-box;box-sizing:border-box}.wrapper[_ngcontent-c1]   .sidebar[_ngcontent-c1]{margin-left:20px;width:300px}.fixed-tool[_ngcontent-c1]{position:fixed;top:40px;left:0;right:0;bottom:0;display:-webkit-box;display:-ms-flexbox;display:flex;background:#fff;padding:20px;z-index:999}.fixed-tool[_ngcontent-c1]   .trade-tools[_ngcontent-c1]{-webkit-box-flex:1;-ms-flex:1;flex:1}.fixed-tool[_ngcontent-c1]   .deal-tools[_ngcontent-c1]{margin-left:20px;width:300px}.fixed-tool[_ngcontent-c1]   .deal-tools[_ngcontent-c1]   .close-tool[_ngcontent-c1]{height:30px;background:#fc0;padding:0 10px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;color:#333;cursor:pointer;margin-bottom:20px;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}.fixed-tool[_ngcontent-c1]   .deal-tools[_ngcontent-c1]   .close-tool[_ngcontent-c1] > span[_ngcontent-c1]{margin-right:5px}</style><style>.section-top-header[_ngcontent-c2]{position:fixed;top:0;left:0;right:0;z-index:9999;background:#fff;color:#fff;height:40px;font-size:12px}.section-top-header[_ngcontent-c2]   .wrapper[_ngcontent-c2]{-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}.section-top-header[_ngcontent-c2]   .wrapper[_ngcontent-c2], .section-top-header[_ngcontent-c2]   .wrapper[_ngcontent-c2]   .nav[_ngcontent-c2]{height:100%;display:-webkit-box;display:-ms-flexbox;display:flex}.section-top-header[_ngcontent-c2]   .wrapper[_ngcontent-c2]   .nav[_ngcontent-c2]{-webkit-box-align:center;-ms-flex-align:center;align-items:center}.section-top-header[_ngcontent-c2]   .wrapper[_ngcontent-c2]   .nav[_ngcontent-c2] > div[_ngcontent-c2]{outline:none!important;cursor:pointer;margin-right:10px;padding-right:10px;border-right:1px solid rgba(0,0,0,.3);color:#333}.section-top-header[_ngcontent-c2]   .wrapper[_ngcontent-c2]   .nav[_ngcontent-c2] > div[_ngcontent-c2]:hover{text-decoration:underline}.section-top-header[_ngcontent-c2]   .wrapper[_ngcontent-c2]   .nav[_ngcontent-c2] > div[_ngcontent-c2]:last-child{margin-right:0;padding-right:0;border-right-width:0}.section-top-header[_ngcontent-c2]   .wrapper[_ngcontent-c2]   .top-profile[_ngcontent-c2]{height:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;color:#333}.section-top-header[_ngcontent-c2]   .wrapper[_ngcontent-c2]   .top-profile_lang[_ngcontent-c2] > span[_ngcontent-c2]{margin-left:10px;padding-left:10px;border-left:1px solid rgba(0,0,0,.3);cursor:pointer}.section-top-header[_ngcontent-c2]   .wrapper[_ngcontent-c2]   .top-profile_lang[_ngcontent-c2] > span[_ngcontent-c2]:hover{color:#0098df}.section-top-header[_ngcontent-c2]   .wrapper[_ngcontent-c2]   .top-profile_lang[_ngcontent-c2] > span.active[_ngcontent-c2]{color:#0098df;font-weight:700}.section-top-header[_ngcontent-c2]   .wrapper[_ngcontent-c2]   .top-profile_user[_ngcontent-c2]{cursor:pointer;outline:none!important}.section-top-header[_ngcontent-c2]   .wrapper[_ngcontent-c2]   .top-profile_user[_ngcontent-c2] > span[_ngcontent-c2]{margin-right:5px;font-size:16px;position:relative;top:2px;color:#0098df}.section-top-header[_ngcontent-c2]   .wrapper[_ngcontent-c2]   .top-profile_balance[_ngcontent-c2] > span[_ngcontent-c2]{margin-left:10px;padding-left:10px;border-left:1px solid rgba(0,0,0,.3)}.section-top-header[_ngcontent-c2]   .wrapper[_ngcontent-c2]   .top-profile_balance[_ngcontent-c2]   .logout[_ngcontent-c2]{cursor:pointer}.section-top-header[_ngcontent-c2]   .wrapper[_ngcontent-c2]   .top-profile_balance[_ngcontent-c2]   .logout[_ngcontent-c2] > span[_ngcontent-c2]{margin-right:5px;font-size:16px;position:relative;top:2px;color:#0098df}.section-menu[_ngcontent-c2]{height:50px;background:#0098df;position:relative;z-index:999}.section-menu[_ngcontent-c2]   .wrapper[_ngcontent-c2]{height:100%;padding:0}.section-menu[_ngcontent-c2]   .wrapper[_ngcontent-c2]   .nav[_ngcontent-c2], .section-menu[_ngcontent-c2]   .wrapper[_ngcontent-c2]   .nav[_ngcontent-c2] > div[_ngcontent-c2]{height:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.section-menu[_ngcontent-c2]   .wrapper[_ngcontent-c2]   .nav[_ngcontent-c2] > div[_ngcontent-c2]{outline:none!important;cursor:pointer;padding:0 15px;color:#fff;-webkit-transition:all .2s ease-in;transition:all .2s ease-in;border-bottom:2px solid transparent;-webkit-box-sizing:border-box;box-sizing:border-box}.section-menu[_ngcontent-c2]   .wrapper[_ngcontent-c2]   .nav[_ngcontent-c2] > div[_ngcontent-c2]:hover{background:#fff;color:#0098df}.section-menu[_ngcontent-c2]   .wrapper[_ngcontent-c2]   .nav[_ngcontent-c2] > div.active[_ngcontent-c2]{color:#0098df;background:#fff;border-bottom:2px solid #fc0}.section-header[_ngcontent-c2]{background:url(/assets/images/background.jpg) 50% no-repeat;background-size:cover;-webkit-box-shadow:0 0 15px rgba(0,56,52,.25);box-shadow:0 0 15px rgba(0,56,52,.25);padding-top:40px;color:#fff;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;position:relative}.section-header[_ngcontent-c2]   .overlay[_ngcontent-c2]{position:absolute;top:0;left:0;right:0;bottom:0;background:-webkit-gradient(linear,left top,left bottom,color-stop(0,transparent),to(rgba(0,0,0,.5)));background:linear-gradient(180deg,transparent 0,rgba(0,0,0,.5))}.section-header[_ngcontent-c2]   .wrapper[_ngcontent-c2]{padding:100px 0;display:-webkit-box;display:-ms-flexbox;display:flex;position:relative;z-index:999}.section-header[_ngcontent-c2]   .wrapper[_ngcontent-c2]   .open-tool[_ngcontent-c2]{position:absolute;bottom:0;right:0;height:30px;background:#fc0;padding:0 10px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;color:#333;cursor:pointer;border-radius:5px 5px 0 0;width:300px;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}.section-header[_ngcontent-c2]   .wrapper[_ngcontent-c2]   .open-tool[_ngcontent-c2] > span[_ngcontent-c2]{margin-right:5px}.section-header[_ngcontent-c2]   .wrapper[_ngcontent-c2]   .main-title[_ngcontent-c2]{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-flex:1;-ms-flex:1;flex:1;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;color:#fff}.section-header[_ngcontent-c2]   .wrapper[_ngcontent-c2]   .main-title[_ngcontent-c2]   .logo[_ngcontent-c2]{cursor:pointer;outline:none!important;margin-bottom:20px}.section-header[_ngcontent-c2]   .wrapper[_ngcontent-c2]   .main-title[_ngcontent-c2]   .logo[_ngcontent-c2]   img[_ngcontent-c2]{height:60px}.section-header[_ngcontent-c2]   .wrapper[_ngcontent-c2]   .main-title[_ngcontent-c2] > div[_ngcontent-c2]{font-size:32px;line-height:1.2;font-weight:100}.section-header[_ngcontent-c2]   .wrapper[_ngcontent-c2]   .main-title[_ngcontent-c2] > div[_ngcontent-c2]:last-child{font-weight:400}.section-header[_ngcontent-c2]   .wrapper[_ngcontent-c2]   .main-stats[_ngcontent-c2]{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;border-left:1px solid hsla(0,0%,100%,.5);padding:0 50px;-webkit-box-sizing:border-box;box-sizing:border-box}.section-header[_ngcontent-c2]   .wrapper[_ngcontent-c2]   .main-stats[_ngcontent-c2] > div[_ngcontent-c2]{font-size:42px;line-height:1;margin-bottom:20px;color:#0098df;font-weight:100}.section-header[_ngcontent-c2]   .wrapper[_ngcontent-c2]   .main-stats[_ngcontent-c2] > div[_ngcontent-c2]:last-child{margin-bottom:0}.section-header[_ngcontent-c2]   .wrapper[_ngcontent-c2]   .main-stats[_ngcontent-c2] > div[_ngcontent-c2] > span[_ngcontent-c2]{display:block;font-size:16px;font-weight:400;color:#fff}.section-header[_ngcontent-c2]   .wrapper[_ngcontent-c2]   .main-login[_ngcontent-c2]{display:-webkit-box;display:-ms-flexbox;display:flex;width:300px;padding:15px;-webkit-box-sizing:border-box;box-sizing:border-box;background:url(/assets/images/login-box-background.jpg) 50% no-repeat;background-size:cover;margin-left:30px;border-radius:5px}.section-header[_ngcontent-c2]   .wrapper[_ngcontent-c2]   .main-login[_ngcontent-c2]   .help[_ngcontent-c2]   .help_header[_ngcontent-c2]{text-decoration:none!important;font-size:20px;padding-bottom:10px;cursor:auto;color:#fc0}.section-header[_ngcontent-c2]   .wrapper[_ngcontent-c2]   .main-login[_ngcontent-c2]   .help[_ngcontent-c2] > div[_ngcontent-c2]{outline:none!important;text-decoration:underline;padding-bottom:5px;cursor:pointer}.section-header[_ngcontent-c2]   .wrapper[_ngcontent-c2]   .main-login[_ngcontent-c2]   .help[_ngcontent-c2] > div[_ngcontent-c2]:last-child{padding-bottom:0}.section-header[_ngcontent-c2]   .wrapper[_ngcontent-c2]   .main-login[_ngcontent-c2]   .help[_ngcontent-c2] > div[_ngcontent-c2]:hover{text-decoration:none}.section-header[_ngcontent-c2]   .wrapper[_ngcontent-c2]   .main-login[_ngcontent-c2]   .content-form[_ngcontent-c2]{width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}.section-header[_ngcontent-c2]   .wrapper[_ngcontent-c2]   .main-login[_ngcontent-c2]   .content-form_title[_ngcontent-c2]{margin-bottom:15px;width:100%;font-size:18px;font-weight:200}.section-header[_ngcontent-c2]   .wrapper[_ngcontent-c2]   .main-login[_ngcontent-c2]   .content-form_title[_ngcontent-c2] > span[_ngcontent-c2]{font-size:14px;-webkit-transition:color .15s ease-in;transition:color .15s ease-in;color:hsla(0,0%,100%,.6);outline:none!important;cursor:pointer}.section-header[_ngcontent-c2]   .wrapper[_ngcontent-c2]   .main-login[_ngcontent-c2]   .content-form_title[_ngcontent-c2] > span[_ngcontent-c2]:hover{color:#fff}.section-header[_ngcontent-c2]   .wrapper[_ngcontent-c2]   .main-login[_ngcontent-c2]   .content-form[_ngcontent-c2]   .form-group[_ngcontent-c2]{position:relative;margin-bottom:15px;width:100%;display:-webkit-box;display:-ms-flexbox;display:flex}.section-header[_ngcontent-c2]   .wrapper[_ngcontent-c2]   .main-login[_ngcontent-c2]   .content-form[_ngcontent-c2]   .form-group[_ngcontent-c2]   .pre-form-control[_ngcontent-c2]{width:40px;height:40px;background:#fff;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;border-radius:5px 0 0 5px}.section-header[_ngcontent-c2]   .wrapper[_ngcontent-c2]   .main-login[_ngcontent-c2]   .content-form[_ngcontent-c2]   .form-group[_ngcontent-c2]   .pre-form-control[_ngcontent-c2] > span[_ngcontent-c2]{color:#333}.section-header[_ngcontent-c2]   .wrapper[_ngcontent-c2]   .main-login[_ngcontent-c2]   .content-form[_ngcontent-c2]   .form-group[_ngcontent-c2]   .form-control[_ngcontent-c2]{width:100%;height:40px;border:0;background:#fff;outline:none!important;padding:0 10px;-webkit-box-sizing:border-box;box-sizing:border-box;border-radius:0 5px 5px 0}.section-header[_ngcontent-c2]   .wrapper[_ngcontent-c2]   .main-login[_ngcontent-c2]   .content-form[_ngcontent-c2]   .form-group[_ngcontent-c2]   .form-control[_ngcontent-c2]::-webkit-input-placeholder{font-size:12px}.section-header[_ngcontent-c2]   .wrapper[_ngcontent-c2]   .main-login[_ngcontent-c2]   .content-form[_ngcontent-c2]   .form-group[_ngcontent-c2]   .form-control[_ngcontent-c2]:-ms-input-placeholder, .section-header[_ngcontent-c2]   .wrapper[_ngcontent-c2]   .main-login[_ngcontent-c2]   .content-form[_ngcontent-c2]   .form-group[_ngcontent-c2]   .form-control[_ngcontent-c2]::-ms-input-placeholder{font-size:12px}.section-header[_ngcontent-c2]   .wrapper[_ngcontent-c2]   .main-login[_ngcontent-c2]   .content-form[_ngcontent-c2]   .form-group[_ngcontent-c2]   .form-control[_ngcontent-c2]::placeholder{font-size:12px}.section-header[_ngcontent-c2]   .wrapper[_ngcontent-c2]   .main-login[_ngcontent-c2]   .content-form[_ngcontent-c2]   .button[_ngcontent-c2]{width:100%;height:40px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;background:#fc0;color:#000;font-weight:400;cursor:pointer;outline:none!important;border-radius:5px;-webkit-transition:background .4s ease-in;transition:background .4s ease-in}.section-header[_ngcontent-c2]   .wrapper[_ngcontent-c2]   .main-login[_ngcontent-c2]   .content-form[_ngcontent-c2]   .button[_ngcontent-c2] > span[_ngcontent-c2]{margin-right:5px}.section-header[_ngcontent-c2]   .wrapper[_ngcontent-c2]   .main-login[_ngcontent-c2]   .content-form[_ngcontent-c2]   .button[_ngcontent-c2]:hover{background:#ffb500}.menu-open-btn[_ngcontent-c2]{display:none}@media only screen and (min-device-width:375px) and (max-device-width:667px){.top-profile_balance[_ngcontent-c2] > span[_ngcontent-c2]:first-child{margin:0!important;padding:0!important;border-left-width:0!important}.main-title[_ngcontent-c2] > div[_ngcontent-c2], .mobile-hide[_ngcontent-c2], .open-tool[_ngcontent-c2], .section-top-header[_ngcontent-c2]   .nav[_ngcontent-c2]{display:none!important}.main-title[_ngcontent-c2] > div.logo[_ngcontent-c2]{display:block!important;margin:20px 0!important}.main-stats[_ngcontent-c2]{display:none!important}.main-login[_ngcontent-c2]{width:100%!important;border-radius:0!important;margin:0!important}.section-menu[_ngcontent-c2]{-webkit-transition:all .5s ease-in!important;transition:all .5s ease-in!important}.section-menu.active[_ngcontent-c2]{height:auto!important}.section-menu[_ngcontent-c2]   .wrapper[_ngcontent-c2]   .menu-open-btn[_ngcontent-c2]{width:50px;height:50px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;color:#fff;background:hsla(0,0%,100%,.2);position:relative}.section-menu[_ngcontent-c2]   .wrapper[_ngcontent-c2]   .menu-open-btn[_ngcontent-c2]   img[_ngcontent-c2]{width:40%}.section-menu[_ngcontent-c2]   .wrapper[_ngcontent-c2]   .menu-open-btn_name[_ngcontent-c2]{position:absolute;top:0;bottom:0;left:100%;padding:0 15px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;font-size:14px}.section-menu[_ngcontent-c2]   .wrapper[_ngcontent-c2]   .nav[_ngcontent-c2]{-webkit-box-flex:1!important;-ms-flex:1!important;flex:1!important;display:none!important}.section-menu[_ngcontent-c2]   .wrapper[_ngcontent-c2]   .nav.active[_ngcontent-c2]{display:block!important}.section-menu[_ngcontent-c2]   .wrapper[_ngcontent-c2]   .nav[_ngcontent-c2] > div[_ngcontent-c2]{padding:10px!important}}</style><style>.deals[_ngcontent-c3]{-webkit-box-shadow:0 0 15px rgba(0,56,52,.25);box-shadow:0 0 15px rgba(0,56,52,.25);padding:10px;-webkit-box-sizing:border-box;box-sizing:border-box;background:#fff;margin-bottom:20px}.deals_header[_ngcontent-c3]{font-weight:500;color:#333;margin-bottom:10px;font-size:14px;letter-spacing:2px;text-transform:uppercase;padding-bottom:10px;border-bottom:2px solid #fc0}.deals_header[_ngcontent-c3] > span[_ngcontent-c3]{margin-right:5px}.deals_body[_ngcontent-c3]   table[_ngcontent-c3]{font-size:12px;width:100%;border-spacing:0}.deals_body[_ngcontent-c3]   table[_ngcontent-c3]   thead[_ngcontent-c3]   tr[_ngcontent-c3]   th[_ngcontent-c3]{font-weight:400;padding:4px;text-align:left;color:#828282}.deals_body[_ngcontent-c3]   table[_ngcontent-c3]   thead[_ngcontent-c3]   tr[_ngcontent-c3]   th[_ngcontent-c3]:last-child{text-align:right}.deals_body[_ngcontent-c3]   table[_ngcontent-c3]   tbody[_ngcontent-c3]   tr[_ngcontent-c3]:nth-child(odd)   td[_ngcontent-c3]{background:rgba(0,152,255,.1)}.deals_body[_ngcontent-c3]   table[_ngcontent-c3]   tbody[_ngcontent-c3]   tr[_ngcontent-c3]   td[_ngcontent-c3]{padding:4px}.deals_body[_ngcontent-c3]   table[_ngcontent-c3]   tbody[_ngcontent-c3]   tr[_ngcontent-c3]   td[_ngcontent-c3]:last-child{text-align:right}</style><style>.indexes[_ngcontent-c4]{-webkit-box-shadow:0 0 15px rgba(0,56,52,.25);box-shadow:0 0 15px rgba(0,56,52,.25);padding:10px;-webkit-box-sizing:border-box;box-sizing:border-box;background:#fff}.indexes_header[_ngcontent-c4]{font-weight:500;color:#333;margin-bottom:10px;font-size:14px;letter-spacing:2px;text-transform:uppercase;padding-bottom:10px;border-bottom:2px solid #fc0}.indexes_header[_ngcontent-c4] > span[_ngcontent-c4]{margin-right:5px}.indexes_filters[_ngcontent-c4]{display:-webkit-box;display:-ms-flexbox;display:flex;margin-bottom:10px;padding-bottom:10px;border-bottom:2px solid #09f}.indexes_filters.none[_ngcontent-c4]{border-bottom-width:0;margin-bottom:0}.indexes_filters[_ngcontent-c4]   select[_ngcontent-c4]{-webkit-box-shadow:none!important;box-shadow:none!important;outline:none!important;border:1px solid #cbd1d4;background:#fff;height:36px;width:100%;border-radius:5px;padding:0 10px;-webkit-box-sizing:border-box;box-sizing:border-box}.indexes_body[_ngcontent-c4]{font-size:12px}</style><style>.section-footer[_ngcontent-c10]{background:#2a3241;height:100px}.section-footer[_ngcontent-c10]   .wrapper[_ngcontent-c10]{display:-webkit-box;display:-ms-flexbox;display:flex;height:100%}.section-footer[_ngcontent-c10]   .wrapper[_ngcontent-c10] > div[_ngcontent-c10]{height:100%;color:#fff}.section-footer[_ngcontent-c10]   .wrapper[_ngcontent-c10]   .logo[_ngcontent-c10]{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.section-footer[_ngcontent-c10]   .wrapper[_ngcontent-c10]   .logo[_ngcontent-c10]   img[_ngcontent-c10]{height:50px;outline:none!important;cursor:pointer}.section-footer[_ngcontent-c10]   .wrapper[_ngcontent-c10]   .address[_ngcontent-c10], .section-footer[_ngcontent-c10]   .wrapper[_ngcontent-c10]   .contacts[_ngcontent-c10]{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;margin-left:150px}.section-footer[_ngcontent-c10]   .wrapper[_ngcontent-c10]   .contacts[_ngcontent-c10]   a[_ngcontent-c10]{text-decoration:none;color:#fff}.section-footer[_ngcontent-c10]   .wrapper[_ngcontent-c10]   .invest[_ngcontent-c10]{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;margin-left:150px}.section-footer[_ngcontent-c10]   .wrapper[_ngcontent-c10]   .invest[_ngcontent-c10]   a[_ngcontent-c10]{color:#fff}.section-footer-info[_ngcontent-c10]{padding:50px 0;margin-top:50px;color:#333;background:#f1f4f8}.section-footer-info[_ngcontent-c10]   .wrapper[_ngcontent-c10]{display:-webkit-box;display:-ms-flexbox;display:flex}.section-footer-info[_ngcontent-c10]   .wrapper[_ngcontent-c10]   .column[_ngcontent-c10]{-webkit-box-flex:1;-ms-flex:1;flex:1;margin-right:20px;padding-right:20px}.section-footer-info[_ngcontent-c10]   .wrapper[_ngcontent-c10]   .column[_ngcontent-c10]:last-child{border-right-width:0;margin-right:0;padding-right:0}.section-footer-info[_ngcontent-c10]   .wrapper[_ngcontent-c10]   .column_header[_ngcontent-c10]{font-weight:500;color:#333;margin-bottom:15px;font-size:12px;letter-spacing:2px;text-transform:uppercase}.section-footer-info[_ngcontent-c10]   .wrapper[_ngcontent-c10]   .column_body[_ngcontent-c10]{padding-bottom:20px}.section-footer-info[_ngcontent-c10]   .wrapper[_ngcontent-c10]   .column_body[_ngcontent-c10]   .posts[_ngcontent-c10]   .post[_ngcontent-c10]{display:-webkit-box;display:-ms-flexbox;display:flex;padding:15px 0;border-top:1px solid #e7e7e7;cursor:pointer;outline:none!important;color:#333}.section-footer-info[_ngcontent-c10]   .wrapper[_ngcontent-c10]   .column_body[_ngcontent-c10]   .posts[_ngcontent-c10]   .post[_ngcontent-c10]:first-child{padding-top:0;border-top-width:0}.section-footer-info[_ngcontent-c10]   .wrapper[_ngcontent-c10]   .column_body[_ngcontent-c10]   .posts[_ngcontent-c10]   .post_thumb[_ngcontent-c10]{-ms-flex-negative:0;flex-shrink:0;width:60px;height:60px;margin-right:20px;background:url(/assets/images/background.jpg) 50% no-repeat;border-radius:5px}.section-footer-info[_ngcontent-c10]   .wrapper[_ngcontent-c10]   .column_body[_ngcontent-c10]   .posts[_ngcontent-c10]   .post_short_title[_ngcontent-c10]{-webkit-transition:color .4s ease-in;transition:color .4s ease-in}.section-footer-info[_ngcontent-c10]   .wrapper[_ngcontent-c10]   .column_body[_ngcontent-c10]   .posts[_ngcontent-c10]   .post_short_title[_ngcontent-c10]:hover{color:#0098df}.section-footer-info[_ngcontent-c10]   .wrapper[_ngcontent-c10]   .column_body[_ngcontent-c10]   .items[_ngcontent-c10]   .item[_ngcontent-c10]{margin-bottom:10px;cursor:pointer;-webkit-transition:color .4s ease-in;transition:color .4s ease-in;color:#333}.section-footer-info[_ngcontent-c10]   .wrapper[_ngcontent-c10]   .column_body[_ngcontent-c10]   .items[_ngcontent-c10]   .item[_ngcontent-c10]:hover{color:#0098df}.section-copyright[_ngcontent-c10]{height:40px;background:#152537}.section-copyright[_ngcontent-c10]   .wrapper[_ngcontent-c10]{height:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;color:#fff}.yellow[_ngcontent-c10]{color:#ffd200;margin-bottom:5px}@media only screen and (min-device-width:375px) and (max-device-width:667px){.section-footer[_ngcontent-c10]{display:none!important}.section-copyright[_ngcontent-c10]   .wrapper[_ngcontent-c10]{display:-webkit-box!important;display:-ms-flexbox!important;display:flex!important}.section-footer-info[_ngcontent-c10]{margin-top:15px!important;padding:15px 0!important}}</style><style>.content[_ngcontent-c9]   .filters[_ngcontent-c9]{padding:10px;-webkit-box-shadow:0 0 15px rgba(0,56,52,.25);box-shadow:0 0 15px rgba(0,56,52,.25)}.content[_ngcontent-c9]   .filters_header[_ngcontent-c9]{font-weight:500;color:#333;margin-bottom:10px;font-size:14px;letter-spacing:2px;text-transform:uppercase;padding-bottom:10px;border-bottom:2px solid #fc0;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.content[_ngcontent-c9]   .filters_header[_ngcontent-c9] > div[_ngcontent-c9] > span[_ngcontent-c9]{margin-right:5px}.content[_ngcontent-c9]   .filters_header[_ngcontent-c9]   .reset[_ngcontent-c9]{color:#0098df;font-size:14px;font-weight:300;text-transform:none;letter-spacing:normal;cursor:pointer}.content[_ngcontent-c9]   .filters_header[_ngcontent-c9]   .reset[_ngcontent-c9]:hover{text-decoration:underline}.content[_ngcontent-c9]   .filters_body[_ngcontent-c9]{display:-webkit-box;display:-ms-flexbox;display:flex}.content[_ngcontent-c9]   .filters_body[_ngcontent-c9]   .filter[_ngcontent-c9]{-webkit-box-flex:1;-ms-flex:1;flex:1;margin-right:15px}.content[_ngcontent-c9]   .filters_body[_ngcontent-c9]   .filter[_ngcontent-c9]:last-child{margin-right:0}.content[_ngcontent-c9]   .filters_body[_ngcontent-c9]   .filter_name[_ngcontent-c9]{color:#828282;margin-bottom:5px}.content.fixed[_ngcontent-c9]{width:100%;height:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}.content.fixed[_ngcontent-c9]   .applications[_ngcontent-c9]{-webkit-box-flex:1;-ms-flex:1;flex:1;position:relative}.content.fixed[_ngcontent-c9]   .applications_scrollbar[_ngcontent-c9]{position:absolute;top:15px;bottom:15px;left:0;right:0;overflow-y:auto}.content.fixed[_ngcontent-c9]   .tool[_ngcontent-c9]{margin-top:0!important}.content[_ngcontent-c9]   .applications_scrollbar[_ngcontent-c9]{display:-webkit-box;display:-ms-flexbox;display:flex;margin:15px 0}.content[_ngcontent-c9]   .applications[_ngcontent-c9]   .column[_ngcontent-c9]{-webkit-box-flex:1;-ms-flex:1;flex:1}.content[_ngcontent-c9]   .applications[_ngcontent-c9]   .column_header[_ngcontent-c9]{font-size:20px;margin:15px 0}.content[_ngcontent-c9]   .applications[_ngcontent-c9]   .column[_ngcontent-c9]:first-child{margin-right:15px;padding-right:15px;border-right:1px solid #e0dfde}.content[_ngcontent-c9]   .applications[_ngcontent-c9]   .column[_ngcontent-c9]   .icon-external-link[_ngcontent-c9]{color:#09f;cursor:pointer}.content[_ngcontent-c9]   .tool[_ngcontent-c9]{margin-top:30px;padding:10px;-webkit-box-shadow:0 0 15px rgba(0,56,52,.25);box-shadow:0 0 15px rgba(0,56,52,.25)}.content[_ngcontent-c9]   .tool_header[_ngcontent-c9]{font-weight:500;color:#333;margin-bottom:10px;font-size:14px;letter-spacing:2px;text-transform:uppercase;padding-bottom:10px;border-bottom:2px solid #fc0;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.content[_ngcontent-c9]   .tool_header[_ngcontent-c9] > div[_ngcontent-c9] > span[_ngcontent-c9]{margin-right:5px}.content[_ngcontent-c9]   .tool_header[_ngcontent-c9]   .reset[_ngcontent-c9]{color:#0098df;font-size:14px;font-weight:300;text-transform:none;letter-spacing:normal;cursor:pointer}.content[_ngcontent-c9]   .tool_header[_ngcontent-c9]   .reset[_ngcontent-c9]:hover{text-decoration:underline}.content[_ngcontent-c9]   .tool_body[_ngcontent-c9]   .row-custom[_ngcontent-c9]{display:-webkit-box;display:-ms-flexbox;display:flex;margin-bottom:10px}.content[_ngcontent-c9]   .tool_body[_ngcontent-c9]   .row-custom[_ngcontent-c9]:last-child{margin-bottom:0}.content[_ngcontent-c9]   .tool_body[_ngcontent-c9]   .row-custom[_ngcontent-c9]   .column[_ngcontent-c9]{position:relative;-webkit-box-flex:1;-ms-flex:1;flex:1;margin-right:15px}.content[_ngcontent-c9]   .tool_body[_ngcontent-c9]   .row-custom[_ngcontent-c9]   .column.columns[_ngcontent-c9]{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;-webkit-box-flex:4;-ms-flex:4;flex:4}.content[_ngcontent-c9]   .tool_body[_ngcontent-c9]   .row-custom[_ngcontent-c9]   .column.flex[_ngcontent-c9]{-webkit-box-flex:4;-ms-flex:4;flex:4}.content[_ngcontent-c9]   .tool_body[_ngcontent-c9]   .row-custom[_ngcontent-c9]   .column.flex[_ngcontent-c9]   .error[_ngcontent-c9]{color:red;height:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.content[_ngcontent-c9]   .tool_body[_ngcontent-c9]   .row-custom[_ngcontent-c9]   .column[_ngcontent-c9]:last-child{margin-right:0}.content[_ngcontent-c9]   .tool_body[_ngcontent-c9]   .row-custom[_ngcontent-c9]   .column_name[_ngcontent-c9]{color:#828282;margin-bottom:5px}.auction[_ngcontent-c9]{margin:30px 0}.auction_description[_ngcontent-c9]{font-size:16px;text-align:center}.auction_description[_ngcontent-c9] > div[_ngcontent-c9] > span[_ngcontent-c9]{font-size:18px;font-weight:500}.auction_timer[_ngcontent-c9]{width:220px;margin:30px auto 0;text-align:center;-webkit-box-sizing:border-box;box-sizing:border-box;border:1px dashed #b8b8b8;color:#333;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;padding:10px 0}.auction_timer[_ngcontent-c9] > div[_ngcontent-c9]{line-height:1}.auction_timer[_ngcontent-c9] > div[_ngcontent-c9]:first-child{font-size:16px;font-weight:700}.auction_timer[_ngcontent-c9] > div[_ngcontent-c9]:nth-child(2){margin:10px 0}.auction_timer[_ngcontent-c9] > div[_ngcontent-c9]:last-child{font-size:48px;font-weight:700}.auction_timer[_ngcontent-c9] > div[_ngcontent-c9] > span[_ngcontent-c9]{font-size:18px;color:#0098df}.auction_timer[_ngcontent-c9] > div[_ngcontent-c9] > span[_ngcontent-c9]:nth-child(2){margin:0 30px}@media only screen and (min-device-width:375px) and (max-device-width:667px){.filters_body[_ngcontent-c9]{display:block!important}.filters_body[_ngcontent-c9]   .filter[_ngcontent-c9]{margin:0!important;margin-bottom:5px!important}.filters_body[_ngcontent-c9]   .filter[_ngcontent-c9]:last-child{margin-bottom:0!important}.tool_body[_ngcontent-c9]   .row-custom[_ngcontent-c9]{display:block!important}.tool_body[_ngcontent-c9]   .row-custom[_ngcontent-c9]   .column[_ngcontent-c9]{margin:0!important;margin-bottom:5px!important}.tool_body[_ngcontent-c9]   .row-custom[_ngcontent-c9]   .column[_ngcontent-c9]:last-child{margin-bottom:0!important}.applications_scrollbar[_ngcontent-c9]{display:block!important}.applications_scrollbar[_ngcontent-c9]   .column[_ngcontent-c9]:first-child{margin:0!important;padding:0!important;border-right-width:0!important;margin-bottom:15px!important}}.apps[_ngcontent-c9]{padding:15px;-webkit-box-sizing:border-box;box-sizing:border-box}.product-filters[_ngcontent-c9]{display:-webkit-box;display:-ms-flexbox;display:flex;margin-bottom:15px}.product-filters[_ngcontent-c9]   .filter[_ngcontent-c9]{-webkit-box-flex:1;-ms-flex:1;flex:1;margin-right:15px}.product-filters[_ngcontent-c9]   .filter[_ngcontent-c9]:last-child{margin-right:0}.product-filters[_ngcontent-c9]   .filter_name[_ngcontent-c9]{color:#828282;margin-bottom:5px}.instr-title[_ngcontent-c9]{font-size:12px}</style><style>.content_header[_ngcontent-c7]{font-size:20px;margin:10px 0;padding-bottom:10px;border-bottom:2px solid #fc0;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.content_body[_ngcontent-c7], .content_header[_ngcontent-c7]{display:-webkit-box;display:-ms-flexbox;display:flex}.content_body[_ngcontent-c7]{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}.content_body.padding[_ngcontent-c7]{padding:20px 0}.content_body[_ngcontent-c7]   .navigation[_ngcontent-c7]{border-bottom:1px solid #09f;display:-webkit-box;display:-ms-flexbox;display:flex}.content_body[_ngcontent-c7]   .navigation[_ngcontent-c7]   .nav-item[_ngcontent-c7]{padding:10px;cursor:pointer;-webkit-box-flex:1;-ms-flex:1;flex:1;text-align:center;-ms-flex-negative:0;flex-shrink:0}.content_body[_ngcontent-c7]   .navigation[_ngcontent-c7]   .nav-item.active[_ngcontent-c7]{background:#09f;color:#fff}.content_body[_ngcontent-c7]   .player-content[_ngcontent-c7]{margin-top:20px;-webkit-box-flex:1;-ms-flex:1;flex:1}</style><style>
+        vg-player {
+            font-family: 'videogular';
+            position: relative;
+            display: flex;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background-color: black;
+        }
+
+        vg-player.fullscreen {
+            position: fixed;
+            left: 0;
+            top: 0;
+        }
+
+        vg-player.native-fullscreen.controls-hidden {
+            cursor: none;
+        }
+    </style><style>[_nghost-c11]{width:100%;height:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;min-height:100px}</style><style>.content[_ngcontent-c14]   .content_header[_ngcontent-c14]{font-weight:500;color:#333;font-size:14px;letter-spacing:2px;text-transform:uppercase;margin:40px 0;padding-bottom:10px;border-bottom:2px solid #fc0;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.content[_ngcontent-c14]   .content_body[_ngcontent-c14]   table[_ngcontent-c14]{font-size:12px}.current-status[_ngcontent-c14]{position:relative;cursor:pointer;height:100%;text-align:right}.current-status[_ngcontent-c14] > span[_ngcontent-c14]{position:relative;top:2px}.current-status[_ngcontent-c14]   .statuses-dropdown[_ngcontent-c14]{position:absolute;display:none;width:200px;right:0;top:100%;background:#fff;-webkit-box-shadow:0 0 2px rgba(0,0,0,.3);box-shadow:0 0 2px rgba(0,0,0,.3);z-index:999}.current-status[_ngcontent-c14]   .statuses-dropdown[_ngcontent-c14] > div[_ngcontent-c14]{height:35px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;padding:0 8px;-webkit-box-sizing:border-box;box-sizing:border-box;border-bottom:1px solid rgba(94,94,94,.1);cursor:pointer}.current-status[_ngcontent-c14]   .statuses-dropdown[_ngcontent-c14] > div[_ngcontent-c14]:last-child{border-bottom-width:0}.current-status[_ngcontent-c14]   .statuses-dropdown[_ngcontent-c14] > div[_ngcontent-c14]:hover{background:hsla(0,0%,75%,.1)}.current-status[_ngcontent-c14]:hover   .statuses-dropdown[_ngcontent-c14]{display:block}table.deals-table[_ngcontent-c14]{width:100%;border-spacing:0}table.deals-table[_ngcontent-c14]   thead[_ngcontent-c14]   tr[_ngcontent-c14]{height:56px}table.deals-table[_ngcontent-c14]   thead[_ngcontent-c14]   tr[_ngcontent-c14]   th[_ngcontent-c14]{font-size:12px;font-weight:500;color:rgba(0,0,0,.54);border-bottom:1px solid rgba(0,0,0,.12);text-align:left;padding:5px;border-right:1px solid rgba(0,0,0,.12)}table.deals-table[_ngcontent-c14]   thead[_ngcontent-c14]   tr[_ngcontent-c14]   th[_ngcontent-c14]:last-child{border-right-width:0}table.deals-table[_ngcontent-c14]   tbody[_ngcontent-c14]   tr[_ngcontent-c14]{min-height:40px}table.deals-table[_ngcontent-c14]   tbody[_ngcontent-c14]   tr[_ngcontent-c14]:nth-child(odd)   td[_ngcontent-c14]{background:#f1f1f1}table.deals-table[_ngcontent-c14]   tbody[_ngcontent-c14]   tr[_ngcontent-c14]:last-child   td[_ngcontent-c14]{border-bottom-width:0}table.deals-table[_ngcontent-c14]   tbody[_ngcontent-c14]   tr[_ngcontent-c14]   td[_ngcontent-c14]{border-bottom:1px solid rgba(0,0,0,.12);border-right:1px solid rgba(0,0,0,.12);padding:5px}table.deals-table[_ngcontent-c14]   tbody[_ngcontent-c14]   tr[_ngcontent-c14]   td[_ngcontent-c14]:last-child{border-right-width:0}.center[_ngcontent-c14]{text-align:center}.download-reports[_ngcontent-c14]{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}</style></head><body><app-root _nghost-c0="" ng-version="5.2.11"><router-outlet _ngcontent-c0=""></router-outlet><app-page _nghost-c1=""><app-header _ngcontent-c1="" _nghost-c2=""><div _ngcontent-c2="" class="section section-top-header">
+<div _ngcontent-c2="" class="wrapper">
+<div _ngcontent-c2="" class="nav">
+<!-- --><div _ngcontent-c2="" tabindex="0">Контакты</div>
+</div>
+<!-- --><!-- -->
+<div _ngcontent-c2="" class="top-profile">
+<div _ngcontent-c2="" class="top-profile_user mobile-hide" routerlink="/my-deals" tabindex="0">
+<span _ngcontent-c2="" class="icon-user"></span>
+                    Хасниязов И.А.
+                </div>
+<div _ngcontent-c2="" class="top-profile_balance">
+<!-- --><span _ngcontent-c2="">
+<!-- --><!-- -->Доступно: 
+                        <!-- -->
+<strong _ngcontent-c2="">248,832.71₸</strong></span>
+<!-- --><span _ngcontent-c2="">
+<!-- --><!-- -->В блоке:
+                        <!-- -->
+<strong _ngcontent-c2="">2,167.29₸</strong></span>
+<span _ngcontent-c2="" class="logout"><span _ngcontent-c2="" class="icon-log-out"></span>
+<!-- --><!-- -->Выйти
+                        <!-- -->
+</span>
+</div>
+<div _ngcontent-c2="" class="top-profile_lang">
+<span _ngcontent-c2="" class="active">RU</span>
+<span _ngcontent-c2="">KZ</span>
+</div>
+</div>
+<!-- -->
+</div>
+</div>
+<div _ngcontent-c2="" class="section section-header">
+<div _ngcontent-c2="" class="overlay"></div>
+<div _ngcontent-c2="" class="wrapper">
+<div _ngcontent-c2="" class="main-title">
+<div _ngcontent-c2="" class="logo" routerlink="/" tabindex="0">
+<img _ngcontent-c2="" src="/assets/images/logo.svg"/>
+</div>
+<!-- --><!-- -->
+<div _ngcontent-c2="">Электронная</div>
+<div _ngcontent-c2="">торговая</div>
+<div _ngcontent-c2="">площадка</div>
+<!-- -->
+<div _ngcontent-c2="">Alan-Trade</div>
+</div>
+<div _ngcontent-c2="" class="main-stats">
+<!-- --><!-- -->
+<div _ngcontent-c2="">
+                    22891
+                    <span _ngcontent-c2="">заявка</span>
+</div>
+<div _ngcontent-c2="">
+                    1431
+                    <span _ngcontent-c2="">сделка</span>
+</div>
+<div _ngcontent-c2="">
+                    330
+                    <span _ngcontent-c2="">компании</span>
+</div>
+<!-- -->
+</div>
+<div _ngcontent-c2="" class="main-login">
+<!-- --><!-- -->
+<div _ngcontent-c2="" class="help">
+<div _ngcontent-c2="" class="help_header">
+<!-- --><!-- -->Помощь
+                        <!-- -->
+</div>
+<div _ngcontent-c2="">
+<!-- --><!-- -->Как это работает?
+                        <!-- -->
+</div>
+<div _ngcontent-c2="">
+<!-- --><!-- -->Записаться на обучение
+                        <!-- -->
+</div>
+<!-- --><div _ngcontent-c2="" tabindex="0">О компании</div><div _ngcontent-c2="" tabindex="0">Клиринговый центр</div><div _ngcontent-c2="" tabindex="0">Нормативные документы</div>
+</div>
+<!-- -->
+</div>
+<!-- --><div _ngcontent-c2="" class="open-tool"><span _ngcontent-c2="" class="icon-zoom-in"></span>
+<!-- --><!-- -->Открыть в полном окне
+            <!-- -->
+</div>
+</div>
+</div>
+<div _ngcontent-c2="" class="section section-menu">
+<div _ngcontent-c2="" class="wrapper">
+<div _ngcontent-c2="" class="menu-open-btn">
+<img _ngcontent-c2="" src="/assets/images/nav-icon.svg"/>
+<div _ngcontent-c2="" class="menu-open-btn_name">Навигация</div>
+</div>
+<div _ngcontent-c2="" class="nav">
+<div _ngcontent-c2="" routerlink="/" tabindex="0">
+<!-- --><!-- -->Главная
+                <!-- -->
+</div>
+<!-- --><div _ngcontent-c2="" routerlinkactive="active" tabindex="0">О компании</div><div _ngcontent-c2="" routerlinkactive="active" tabindex="0">Клиринговый центр</div><div _ngcontent-c2="" routerlinkactive="active" tabindex="0">Нормативные документы</div>
+<div _ngcontent-c2="" routerlink="/reports" routerlinkactive="active" tabindex="0">
+<!-- --><!-- -->Итоги
+                <!-- -->
+</div>
+<div _ngcontent-c2="" routerlink="/news" routerlinkactive="active" tabindex="0">
+<!-- --><!-- -->Новости
+                <!-- -->
+</div>
+<div _ngcontent-c2="" class="active" routerlink="/instruments" routerlinkactive="active" style="" tabindex="0">
+<!-- --><!-- -->Торговые инструменты
+                <!-- -->
+</div>
+</div>
+</div>
+</div>
+<!-- -->
+</app-header>
+<div _ngcontent-c1="" class="section">
+<div _ngcontent-c1="" class="wrapper">
+<div _ngcontent-c1="" class="content">
+<router-outlet _ngcontent-c1=""></router-outlet><app-instruments _nghost-c14=""><div _ngcontent-c14="" class="content">
+<div _ngcontent-c14="" class="content_header">
+        Торговые инструменты
+    </div>
+<div _ngcontent-c14="" class="content_body">
+<!-- --><!-- -->
+<table _ngcontent-c14="" class="table table-bordered table-hover">
+<thead _ngcontent-c14="">
+<tr _ngcontent-c14="">
+<th _ngcontent-c14="">ID</th>
+<th _ngcontent-c14="">Наименование</th>
+<th _ngcontent-c14="">Базовая цена</th>
+<th _ngcontent-c14="">Объем 1-го лота</th>
+<th _ngcontent-c14="">Производитель</th>
+<th _ngcontent-c14="">Условия поставки</th>
+<th _ngcontent-c14="">Регион поставки</th>
+</tr>
+</thead>
+<tbody _ngcontent-c14="">
+<!-- --><tr _ngcontent-c14="">
+<td _ngcontent-c14="">74</td>
+<td _ngcontent-c14="">Пропан-бутан</td>
+<td _ngcontent-c14="">43,345.87</td>
+<td _ngcontent-c14="">1</td>
+<td _ngcontent-c14="">ТОО «АНПЗ»</td>
+<td _ngcontent-c14="">EXW</td>
+<td _ngcontent-c14="">Карагандинская область</td>
+</tr><tr _ngcontent-c14="">
+<td _ngcontent-c14="">105</td>
+<td _ngcontent-c14="">Пропан-бутан</td>
+<td _ngcontent-c14="">43,345.87</td>
+<td _ngcontent-c14="">1</td>
+<td _ngcontent-c14="">ТОО «ПНХЗ»</td>
+<td _ngcontent-c14="">EXW</td>
+<td _ngcontent-c14="">Павлодарская область</td>
+</tr><tr _ngcontent-c14="">
+<td _ngcontent-c14="">91</td>
+<td _ngcontent-c14="">Бутан</td>
+<td _ngcontent-c14="">43,345.87</td>
+<td _ngcontent-c14="">36</td>
+<td _ngcontent-c14="">ТОО «ПНХЗ»</td>
+<td _ngcontent-c14="">EXW</td>
+<td _ngcontent-c14="">Павлодарская область</td>
+</tr><tr _ngcontent-c14="">
+<td _ngcontent-c14="">162</td>
+<td _ngcontent-c14="">Пропан-бутан (Ж/Д)</td>
+<td _ngcontent-c14="">43,345.87</td>
+<td _ngcontent-c14="">36</td>
+<td _ngcontent-c14="">АО «СНПС-Актобемунайгаз»</td>
+<td _ngcontent-c14="">EXW</td>
+<td _ngcontent-c14="">СКО</td>
+</tr><tr _ngcontent-c14="">
+<td _ngcontent-c14="">164</td>
+<td _ngcontent-c14="">Пропан-бутан (Ж/Д)</td>
+<td _ngcontent-c14="">43,345.87</td>
+<td _ngcontent-c14="">36</td>
+<td _ngcontent-c14="">АО «СНПС-Актобемунайгаз»</td>
+<td _ngcontent-c14="">EXW</td>
+<td _ngcontent-c14="">Актюбинская область</td>
+</tr><tr _ngcontent-c14="">
+<td _ngcontent-c14="">163</td>
+<td _ngcontent-c14="">Пропан-бутан (Ж/Д)</td>
+<td _ngcontent-c14="">43,345.87</td>
+<td _ngcontent-c14="">36</td>
+<td _ngcontent-c14="">АО «СНПС-Актобемунайгаз»</td>
+<td _ngcontent-c14="">EXW</td>
+<td _ngcontent-c14="">Акмолинская область</td>
+</tr><tr _ngcontent-c14="">
+<td _ngcontent-c14="">148</td>
+<td _ngcontent-c14="">Пропан-бутан</td>
+<td _ngcontent-c14="">43,345.87</td>
+<td _ngcontent-c14="">1</td>
+<td _ngcontent-c14="">АО «СНПС-Актобемунайгаз»</td>
+<td _ngcontent-c14="">EXW</td>
+<td _ngcontent-c14="">Туркестанская область</td>
+</tr><tr _ngcontent-c14="">
+<td _ngcontent-c14="">118</td>
+<td _ngcontent-c14="">Пропан-бутан</td>
+<td _ngcontent-c14="">43,345.87</td>
+<td _ngcontent-c14="">36</td>
+<td _ngcontent-c14="">ТОО «ПНХЗ»</td>
+<td _ngcontent-c14="">EXW</td>
+<td _ngcontent-c14="">Жамбылская область</td>
+</tr><tr _ngcontent-c14="">
+<td _ngcontent-c14="">88</td>
+<td _ngcontent-c14="">Бутан</td>
+<td _ngcontent-c14="">43,345.87</td>
+<td _ngcontent-c14="">1</td>
+<td _ngcontent-c14="">ТОО «ПНХЗ»</td>
+<td _ngcontent-c14="">EXW</td>
+<td _ngcontent-c14="">Алматинская область</td>
+</tr><tr _ngcontent-c14="">
+<td _ngcontent-c14="">65</td>
+<td _ngcontent-c14="">Бутан</td>
+<td _ngcontent-c14="">43,345.87</td>
+<td _ngcontent-c14="">1</td>
+<td _ngcontent-c14="">ТОО «АНПЗ»</td>
+<td _ngcontent-c14="">EXW</td>
+<td _ngcontent-c14="">ЗКО</td>
+</tr><tr _ngcontent-c14="">
+<td _ngcontent-c14="">160</td>
+<td _ngcontent-c14="">Пропан-бутан (Авто)</td>
+<td _ngcontent-c14="">43,345.87</td>
+<td _ngcontent-c14="">1</td>
+<td _ngcontent-c14="">АО «СНПС-Актобемунайгаз»</td>
+<td _ngcontent-c14="">EXW</td>
+<td _ngcontent-c14="">Акмолинская область</td>
+</tr><tr _ngcontent-c14="">
+<td _ngcontent-c14="">114</td>
+<td _ngcontent-c14="">Бутан</td>
+<td _ngcontent-c14="">43,345.87</td>
+<td _ngcontent-c14="">36</td>
+<td _ngcontent-c14="">ТОО «ПНХЗ»</td>
+<td _ngcontent-c14="">EXW</td>
+<td _ngcontent-c14="">Жамбылская область</td>
+</tr><tr _ngcontent-c14="">
+<td _ngcontent-c14="">216</td>
+<td _ngcontent-c14="">Бутан</td>
+<td _ngcontent-c14="">43,345.87</td>
+<td _ngcontent-c14="">1</td>
+<td _ngcontent-c14="">ТОО «ПНХЗ»</td>
+<td _ngcontent-c14="">EXW</td>
+<td _ngcontent-c14="">Жамбылская область</td>
+</tr><tr _ngcontent-c14="">
+<td _ngcontent-c14="">99</td>
+<td _ngcontent-c14="">Пропан-бутан</td>
+<td _ngcontent-c14="">43,345.87</td>
+<td _ngcontent-c14="">1</td>
+<td _ngcontent-c14="">ТОО «ПНХЗ»</td>
+<td _ngcontent-c14="">EXW</td>
+<td _ngcontent-c14="">Алматы</td>
+</tr><tr _ngcontent-c14="">
+<td _ngcontent-c14="">134</td>
+<td _ngcontent-c14="">Пропан-бутан</td>
+<td _ngcontent-c14="">63,462.66</td>
+<td _ngcontent-c14="">1</td>
+<td _ngcontent-c14="">ТОО «КазГПЗ»</td>
+<td _ngcontent-c14="">EXW</td>
+<td _ngcontent-c14="">Тупкараганский район, Мангистауская область</td>
+</tr><tr _ngcontent-c14="">
+<td _ngcontent-c14="">198</td>
+<td _ngcontent-c14="">Пропан-бутан</td>
+<td _ngcontent-c14="">43,345.87</td>
+<td _ngcontent-c14="">36</td>
+<td _ngcontent-c14="">ТОО «ПНХЗ»</td>
+<td _ngcontent-c14="">EXW</td>
+<td _ngcontent-c14="">Алматы</td>
+</tr><tr _ngcontent-c14="">
+<td _ngcontent-c14="">217</td>
+<td _ngcontent-c14="">Пропан-бутан</td>
+<td _ngcontent-c14="">43,345.87</td>
+<td _ngcontent-c14="">1</td>
+<td _ngcontent-c14="">ТОО «ПНХЗ»</td>
+<td _ngcontent-c14="">EXW</td>
+<td _ngcontent-c14="">Жамбылская область</td>
+</tr><tr _ngcontent-c14="">
+<td _ngcontent-c14="">129</td>
+<td _ngcontent-c14="">Пропан-бутан</td>
+<td _ngcontent-c14="">63,462.66</td>
+<td _ngcontent-c14="">1</td>
+<td _ngcontent-c14="">ТОО «КазГПЗ»</td>
+<td _ngcontent-c14="">EXW</td>
+<td _ngcontent-c14="">Актау, Мангистауская область</td>
+</tr><tr _ngcontent-c14="">
+<td _ngcontent-c14="">130</td>
+<td _ngcontent-c14="">Пропан-бутан</td>
+<td _ngcontent-c14="">63,462.66</td>
+<td _ngcontent-c14="">1</td>
+<td _ngcontent-c14="">ТОО «КазГПЗ»</td>
+<td _ngcontent-c14="">EXW</td>
+<td _ngcontent-c14="">Бейнеуский район, Мангистауская область</td>
+</tr><tr _ngcontent-c14="">
+<td _ngcontent-c14="">131</td>
+<td _ngcontent-c14="">Пропан-бутан</td>
+<td _ngcontent-c14="">63,462.66</td>
+<td _ngcontent-c14="">1</td>
+<td _ngcontent-c14="">ТОО «КазГПЗ»</td>
+<td _ngcontent-c14="">EXW</td>
+<td _ngcontent-c14="">Мунайлинский район, Мангистауская область</td>
+</tr><tr _ngcontent-c14="">
+<td _ngcontent-c14="">135</td>
+<td _ngcontent-c14="">Пропан-бутан</td>
+<td _ngcontent-c14="">43,345.87</td>
+<td _ngcontent-c14="">1</td>
+<td _ngcontent-c14="">ТОО «ПНХЗ»</td>
+<td _ngcontent-c14="">EXW</td>
+<td _ngcontent-c14="">ВКО</td>
+</tr><tr _ngcontent-c14="">
+<td _ngcontent-c14="">218</td>
+<td _ngcontent-c14="">Пропан-бутан (Ж/Д)</td>
+<td _ngcontent-c14="">43,345.87</td>
+<td _ngcontent-c14="">36</td>
+<td _ngcontent-c14="">АО «СНПС-Актобемунайгаз»</td>
+<td _ngcontent-c14="">EXW</td>
+<td _ngcontent-c14="">Шымкент</td>
+</tr><tr _ngcontent-c14="">
+<td _ngcontent-c14="">100</td>
+<td _ngcontent-c14="">Пропан-бутан</td>
+<td _ngcontent-c14="">43,345.87</td>
+<td _ngcontent-c14="">1</td>
+<td _ngcontent-c14="">ТОО «ПНХЗ»</td>
+<td _ngcontent-c14="">EXW</td>
+<td _ngcontent-c14="">Алматинская область</td>
+</tr><tr _ngcontent-c14="">
+<td _ngcontent-c14="">77</td>
+<td _ngcontent-c14="">Пропан-бутан</td>
+<td _ngcontent-c14="">43,345.87</td>
+<td _ngcontent-c14="">1</td>
+<td _ngcontent-c14="">ТОО «АНПЗ»</td>
+<td _ngcontent-c14="">EXW</td>
+<td _ngcontent-c14="">Шымкент</td>
+</tr><tr _ngcontent-c14="">
+<td _ngcontent-c14="">219</td>
+<td _ngcontent-c14="">Пропан-бутан (Авто)</td>
+<td _ngcontent-c14="">43,345.87</td>
+<td _ngcontent-c14="">1</td>
+<td _ngcontent-c14="">АО «СНПС-Актобемунайгаз»</td>
+<td _ngcontent-c14="">EXW</td>
+<td _ngcontent-c14="">Шымкент</td>
+</tr><tr _ngcontent-c14="">
+<td _ngcontent-c14="">188</td>
+<td _ngcontent-c14="">Пропан-бутан</td>
+<td _ngcontent-c14="">43,345.87</td>
+<td _ngcontent-c14="">1</td>
+<td _ngcontent-c14="">ТОО «АНПЗ»</td>
+<td _ngcontent-c14="">EXW</td>
+<td _ngcontent-c14="">Костанайская область</td>
+</tr><tr _ngcontent-c14="">
+<td _ngcontent-c14="">121</td>
+<td _ngcontent-c14="">Пропан-бутан</td>
+<td _ngcontent-c14="">63,462.66</td>
+<td _ngcontent-c14="">1</td>
+<td _ngcontent-c14="">ТОО «КазГПЗ»</td>
+<td _ngcontent-c14="">EXW</td>
+<td _ngcontent-c14="">Жанаозен, Мангистауская область</td>
+</tr><tr _ngcontent-c14="">
+<td _ngcontent-c14="">156</td>
+<td _ngcontent-c14="">Пропан-бутан (Авто)</td>
+<td _ngcontent-c14="">43,345.87</td>
+<td _ngcontent-c14="">1</td>
+<td _ngcontent-c14="">АО «СНПС-Актобемунайгаз»</td>
+<td _ngcontent-c14="">EXW</td>
+<td _ngcontent-c14="">Карагандинская область</td>
+</tr><tr _ngcontent-c14="">
+<td _ngcontent-c14="">72</td>
+<td _ngcontent-c14="">Пропан-бутан</td>
+<td _ngcontent-c14="">43,345.87</td>
+<td _ngcontent-c14="">1</td>
+<td _ngcontent-c14="">ТОО «АНПЗ»</td>
+<td _ngcontent-c14="">EXW</td>
+<td _ngcontent-c14="">Атырауская область</td>
+</tr><tr _ngcontent-c14="">
+<td _ngcontent-c14="">73</td>
+<td _ngcontent-c14="">Пропан-бутан</td>
+<td _ngcontent-c14="">43,345.87</td>
+<td _ngcontent-c14="">1</td>
+<td _ngcontent-c14="">ТОО «АНПЗ»</td>
+<td _ngcontent-c14="">EXW</td>
+<td _ngcontent-c14="">ЗКО</td>
+</tr><tr _ngcontent-c14="">
+<td _ngcontent-c14="">138</td>
+<td _ngcontent-c14="">Бутан</td>
+<td _ngcontent-c14="">43,345.87</td>
+<td _ngcontent-c14="">36</td>
+<td _ngcontent-c14="">ТОО «ПНХЗ»</td>
+<td _ngcontent-c14="">EXW</td>
+<td _ngcontent-c14="">Алматинская область</td>
+</tr><tr _ngcontent-c14="">
+<td _ngcontent-c14="">170</td>
+<td _ngcontent-c14="">Пропан-бутан (Ж/Д)</td>
+<td _ngcontent-c14="">43,345.87</td>
+<td _ngcontent-c14="">36</td>
+<td _ngcontent-c14="">АО «СНПС-Актобемунайгаз»</td>
+<td _ngcontent-c14="">EXW</td>
+<td _ngcontent-c14="">Карагандинская область</td>
+</tr><tr _ngcontent-c14="">
+<td _ngcontent-c14="">153</td>
+<td _ngcontent-c14="">Пропан-бутан (Авто)</td>
+<td _ngcontent-c14="">43,345.87</td>
+<td _ngcontent-c14="">1</td>
+<td _ngcontent-c14="">АО «СНПС-Актобемунайгаз»</td>
+<td _ngcontent-c14="">EXW</td>
+<td _ngcontent-c14="">СКО</td>
+</tr><tr _ngcontent-c14="">
+<td _ngcontent-c14="">147</td>
+<td _ngcontent-c14="">Пропан-бутан (Авто)</td>
+<td _ngcontent-c14="">43,345.87</td>
+<td _ngcontent-c14="">1</td>
+<td _ngcontent-c14="">АО «СНПС-Актобемунайгаз»</td>
+<td _ngcontent-c14="">EXW</td>
+<td _ngcontent-c14="">Актюбинская область</td>
+</tr><tr _ngcontent-c14="">
+<td _ngcontent-c14="">137</td>
+<td _ngcontent-c14="">Бутан</td>
+<td _ngcontent-c14="">43,345.87</td>
+<td _ngcontent-c14="">36</td>
+<td _ngcontent-c14="">ТОО «ПНХЗ»</td>
+<td _ngcontent-c14="">EXW</td>
+<td _ngcontent-c14="">Алматы</td>
+</tr><tr _ngcontent-c14="">
+<td _ngcontent-c14="">96</td>
+<td _ngcontent-c14="">Бутан</td>
+<td _ngcontent-c14="">43,345.87</td>
+<td _ngcontent-c14="">36</td>
+<td _ngcontent-c14="">ТОО «ПНХЗ»</td>
+<td _ngcontent-c14="">EXW</td>
+<td _ngcontent-c14="">ВКО</td>
+</tr><tr _ngcontent-c14="">
+<td _ngcontent-c14="">64</td>
+<td _ngcontent-c14="">Бутан</td>
+<td _ngcontent-c14="">43,345.87</td>
+<td _ngcontent-c14="">1</td>
+<td _ngcontent-c14="">ТОО «АНПЗ»</td>
+<td _ngcontent-c14="">EXW</td>
+<td _ngcontent-c14="">Атырауская область</td>
+</tr><tr _ngcontent-c14="">
+<td _ngcontent-c14="">189</td>
+<td _ngcontent-c14="">Бутан</td>
+<td _ngcontent-c14="">43,345.87</td>
+<td _ngcontent-c14="">1</td>
+<td _ngcontent-c14="">ТОО «АНПЗ»</td>
+<td _ngcontent-c14="">EXW</td>
+<td _ngcontent-c14="">Костанайская область</td>
+</tr><tr _ngcontent-c14="">
+<td _ngcontent-c14="">106</td>
+<td _ngcontent-c14="">Пропан-бутан</td>
+<td _ngcontent-c14="">43,345.87</td>
+<td _ngcontent-c14="">36</td>
+<td _ngcontent-c14="">ТОО «ПНХЗ»</td>
+<td _ngcontent-c14="">EXW</td>
+<td _ngcontent-c14="">Алматинская область</td>
+</tr><tr _ngcontent-c14="">
+<td _ngcontent-c14="">155</td>
+<td _ngcontent-c14="">Пропан-бутан (Авто)</td>
+<td _ngcontent-c14="">43,345.87</td>
+<td _ngcontent-c14="">1</td>
+<td _ngcontent-c14="">АО «СНПС-Актобемунайгаз»</td>
+<td _ngcontent-c14="">EXW</td>
+<td _ngcontent-c14="">Костанайская область</td>
+</tr><tr _ngcontent-c14="">
+<td _ngcontent-c14="">87</td>
+<td _ngcontent-c14="">Бутан</td>
+<td _ngcontent-c14="">43,345.87</td>
+<td _ngcontent-c14="">1</td>
+<td _ngcontent-c14="">ТОО «ПНХЗ»</td>
+<td _ngcontent-c14="">EXW</td>
+<td _ngcontent-c14="">Алматы</td>
+</tr><tr _ngcontent-c14="">
+<td _ngcontent-c14="">108</td>
+<td _ngcontent-c14="">Пропан-бутан</td>
+<td _ngcontent-c14="">43,345.87</td>
+<td _ngcontent-c14="">36</td>
+<td _ngcontent-c14="">ТОО «ПНХЗ»</td>
+<td _ngcontent-c14="">EXW</td>
+<td _ngcontent-c14="">ВКО</td>
+</tr><tr _ngcontent-c14="">
+<td _ngcontent-c14="">132</td>
+<td _ngcontent-c14="">Пропан-бутан</td>
+<td _ngcontent-c14="">63,462.66</td>
+<td _ngcontent-c14="">1</td>
+<td _ngcontent-c14="">ТОО «КазГПЗ»</td>
+<td _ngcontent-c14="">EXW</td>
+<td _ngcontent-c14="">Мангистауский район, Мангистауская область</td>
+</tr><tr _ngcontent-c14="">
+<td _ngcontent-c14="">133</td>
+<td _ngcontent-c14="">Пропан-бутан</td>
+<td _ngcontent-c14="">63,462.66</td>
+<td _ngcontent-c14="">1</td>
+<td _ngcontent-c14="">ТОО «КазГПЗ»</td>
+<td _ngcontent-c14="">EXW</td>
+<td _ngcontent-c14="">Каракиянский район, Мангистауская область</td>
+</tr><tr _ngcontent-c14="">
+<td _ngcontent-c14="">66</td>
+<td _ngcontent-c14="">Бутан</td>
+<td _ngcontent-c14="">43,345.87</td>
+<td _ngcontent-c14="">1</td>
+<td _ngcontent-c14="">ТОО «АНПЗ»</td>
+<td _ngcontent-c14="">EXW</td>
+<td _ngcontent-c14="">Карагандинская область</td>
+</tr><tr _ngcontent-c14="">
+<td _ngcontent-c14="">76</td>
+<td _ngcontent-c14="">Пропан-бутан</td>
+<td _ngcontent-c14="">43,345.87</td>
+<td _ngcontent-c14="">1</td>
+<td _ngcontent-c14="">ТОО «АНПЗ»</td>
+<td _ngcontent-c14="">EXW</td>
+<td _ngcontent-c14="">СКО</td>
+</tr><tr _ngcontent-c14="">
+<td _ngcontent-c14="">68</td>
+<td _ngcontent-c14="">Бутан</td>
+<td _ngcontent-c14="">43,345.87</td>
+<td _ngcontent-c14="">1</td>
+<td _ngcontent-c14="">ТОО «АНПЗ»</td>
+<td _ngcontent-c14="">EXW</td>
+<td _ngcontent-c14="">СКО</td>
+</tr><tr _ngcontent-c14="">
+<td _ngcontent-c14="">172</td>
+<td _ngcontent-c14="">Пропан-бутан (Ж/Д)</td>
+<td _ngcontent-c14="">43,345.87</td>
+<td _ngcontent-c14="">36</td>
+<td _ngcontent-c14="">АО «СНПС-Актобемунайгаз»</td>
+<td _ngcontent-c14="">EXW</td>
+<td _ngcontent-c14="">Нур-Султан</td>
+</tr><tr _ngcontent-c14="">
+<td _ngcontent-c14="">152</td>
+<td _ngcontent-c14="">Пропан-бутан (Авто)</td>
+<td _ngcontent-c14="">43,345.87</td>
+<td _ngcontent-c14="">1</td>
+<td _ngcontent-c14="">АО «СНПС-Актобемунайгаз»</td>
+<td _ngcontent-c14="">EXW</td>
+<td _ngcontent-c14="">Нур-Султан</td>
+</tr><tr _ngcontent-c14="">
+<td _ngcontent-c14="">174</td>
+<td _ngcontent-c14="">Пропан-бутан</td>
+<td _ngcontent-c14="">43,345.87</td>
+<td _ngcontent-c14="">36</td>
+<td _ngcontent-c14="">АО «СНПС-Актобемунайгаз»</td>
+<td _ngcontent-c14="">EXW</td>
+<td _ngcontent-c14="">Туркестанская область</td>
+</tr><tr _ngcontent-c14="">
+<td _ngcontent-c14="">103</td>
+<td _ngcontent-c14="">Пропан-бутан</td>
+<td _ngcontent-c14="">43,345.87</td>
+<td _ngcontent-c14="">36</td>
+<td _ngcontent-c14="">ТОО «ПНХЗ»</td>
+<td _ngcontent-c14="">EXW</td>
+<td _ngcontent-c14="">Павлодарская область</td>
+</tr><tr _ngcontent-c14="">
+<td _ngcontent-c14="">124</td>
+<td _ngcontent-c14="">Бутан</td>
+<td _ngcontent-c14="">69,808.92</td>
+<td _ngcontent-c14="">36</td>
+<td _ngcontent-c14="">ТОО «ПКОП»</td>
+<td _ngcontent-c14="">FCA</td>
+<td _ngcontent-c14="">Казахстан</td>
+</tr><tr _ngcontent-c14="">
+<td _ngcontent-c14="">70</td>
+<td _ngcontent-c14="">Бутан</td>
+<td _ngcontent-c14="">43,345.87</td>
+<td _ngcontent-c14="">1</td>
+<td _ngcontent-c14="">ТОО «АНПЗ»</td>
+<td _ngcontent-c14="">EXW</td>
+<td _ngcontent-c14="">Туркестанская область</td>
+</tr><tr _ngcontent-c14="">
+<td _ngcontent-c14="">69</td>
+<td _ngcontent-c14="">Бутан</td>
+<td _ngcontent-c14="">43,345.87</td>
+<td _ngcontent-c14="">1</td>
+<td _ngcontent-c14="">ТОО «АНПЗ»</td>
+<td _ngcontent-c14="">EXW</td>
+<td _ngcontent-c14="">Шымкент</td>
+</tr><tr _ngcontent-c14="">
+<td _ngcontent-c14="">78</td>
+<td _ngcontent-c14="">Пропан-бутан</td>
+<td _ngcontent-c14="">43,345.87</td>
+<td _ngcontent-c14="">1</td>
+<td _ngcontent-c14="">ТОО «АНПЗ»</td>
+<td _ngcontent-c14="">EXW</td>
+<td _ngcontent-c14="">Туркестанская область</td>
+</tr><tr _ngcontent-c14="">
+<td _ngcontent-c14="">45</td>
+<td _ngcontent-c14="">Пропан-бутан</td>
+<td _ngcontent-c14="">43,345.87</td>
+<td _ngcontent-c14="">35</td>
+<td _ngcontent-c14="">ТОО СП «КазГерМунай»</td>
+<td _ngcontent-c14="">EXW</td>
+<td _ngcontent-c14="">Кызылординская область</td>
+</tr><tr _ngcontent-c14="">
+<td _ngcontent-c14="">41</td>
+<td _ngcontent-c14="">Пропан-бутан</td>
+<td _ngcontent-c14="">43,345.87</td>
+<td _ngcontent-c14="">35</td>
+<td _ngcontent-c14="">ТОО «Казахойл Актобе»</td>
+<td _ngcontent-c14="">EXW</td>
+<td _ngcontent-c14="">Актюбинская область</td>
+</tr><tr _ngcontent-c14="">
+<td _ngcontent-c14="">176</td>
+<td _ngcontent-c14="">Пропан-бутан (Ж/Д)</td>
+<td _ngcontent-c14="">43,345.87</td>
+<td _ngcontent-c14="">36</td>
+<td _ngcontent-c14="">АО «СНПС-Актобемунайгаз»</td>
+<td _ngcontent-c14="">EXW</td>
+<td _ngcontent-c14="">Жамбылская область</td>
+</tr><tr _ngcontent-c14="">
+<td _ngcontent-c14="">171</td>
+<td _ngcontent-c14="">Пропан-бутан (Ж/Д)</td>
+<td _ngcontent-c14="">43,345.87</td>
+<td _ngcontent-c14="">36</td>
+<td _ngcontent-c14="">АО «СНПС-Актобемунайгаз»</td>
+<td _ngcontent-c14="">EXW</td>
+<td _ngcontent-c14="">Костанайская область</td>
+</tr><tr _ngcontent-c14="">
+<td _ngcontent-c14="">93</td>
+<td _ngcontent-c14="">Бутан</td>
+<td _ngcontent-c14="">43,345.87</td>
+<td _ngcontent-c14="">1</td>
+<td _ngcontent-c14="">ТОО «ПНХЗ»</td>
+<td _ngcontent-c14="">EXW</td>
+<td _ngcontent-c14="">Павлодарская область</td>
+</tr><tr _ngcontent-c14="">
+<td _ngcontent-c14="">196</td>
+<td _ngcontent-c14="">Пропан-бутан</td>
+<td _ngcontent-c14="">43,345.87</td>
+<td _ngcontent-c14="">1</td>
+<td _ngcontent-c14="">ТОО «АНПЗ»</td>
+<td _ngcontent-c14="">EXW</td>
+<td _ngcontent-c14="">Нур-Султан</td>
+</tr><tr _ngcontent-c14="">
+<td _ngcontent-c14="">197</td>
+<td _ngcontent-c14="">Бутан</td>
+<td _ngcontent-c14="">43,345.87</td>
+<td _ngcontent-c14="">1</td>
+<td _ngcontent-c14="">ТОО «АНПЗ»</td>
+<td _ngcontent-c14="">EXW</td>
+<td _ngcontent-c14="">Нур-Султан</td>
+</tr><tr _ngcontent-c14="">
+<td _ngcontent-c14="">136</td>
+<td _ngcontent-c14="">Бутан</td>
+<td _ngcontent-c14="">43,345.87</td>
+<td _ngcontent-c14="">1</td>
+<td _ngcontent-c14="">ТОО «ПНХЗ»</td>
+<td _ngcontent-c14="">EXW</td>
+<td _ngcontent-c14="">ВКО</td>
+</tr><tr _ngcontent-c14="">
+<td _ngcontent-c14="">177</td>
+<td _ngcontent-c14="">Пропан-бутан (Авто)</td>
+<td _ngcontent-c14="">43,345.87</td>
+<td _ngcontent-c14="">1</td>
+<td _ngcontent-c14="">АО «СНПС-Актобемунайгаз»</td>
+<td _ngcontent-c14="">EXW</td>
+<td _ngcontent-c14="">Жамбылская область</td>
+</tr>
+</tbody>
+</table>
+<!-- -->
+</div>
+</div>
+</app-instruments>
+</div>
+<div _ngcontent-c1="" class="sidebar">
+<app-deals _ngcontent-c1="" _nghost-c3=""><!-- --><div _ngcontent-c3="" class="deals">
+<div _ngcontent-c3="" class="deals_header">
+<span _ngcontent-c3="" class="icon-grid"></span>
+<!-- --><!-- -->Сделки
+        <!-- -->
+</div>
+<!-- -->
+<!-- --><!-- -->
+<div _ngcontent-c3="" class="deals_body">
+<table _ngcontent-c3="">
+<thead _ngcontent-c3="">
+<tr _ngcontent-c3="">
+<th _ngcontent-c3="">Т/И</th>
+<th _ngcontent-c3="">Тонн</th>
+<th _ngcontent-c3="">Тенге</th>
+</tr>
+</thead>
+<tbody _ngcontent-c3="">
+<!-- -->
+</tbody>
+</table>
+</div>
+</div>
+</app-deals>
+<app-price-index _ngcontent-c1="" _nghost-c4=""><div _ngcontent-c4="" class="indexes">
+<div _ngcontent-c4="" class="indexes_header">
+<span _ngcontent-c4="" class="icon-activity"></span>
+<!-- --><!-- -->Индекс цен
+        <!-- -->
+</div>
+<div _ngcontent-c4="" class="indexes_filters none">
+<select _ngcontent-c4="">
+<!-- --><option _ngcontent-c4="" value="1">
+                Бутан
+            </option><option _ngcontent-c4="" value="2">
+                Пропан-бутан
+            </option><option _ngcontent-c4="" value="3">
+                Пропан-бутан (Ж/Д)
+            </option><option _ngcontent-c4="" value="4">
+                Пропан-бутан (Авто)
+            </option>
+</select>
+</div>
+<div _ngcontent-c4="" class="indexes_filters">
+<select _ngcontent-c4="">
+<option _ngcontent-c4="">Все заводы</option>
+<!-- --><option _ngcontent-c4="" value="3">
+                ТОО «ПКОП»
+            </option><option _ngcontent-c4="" value="4">
+                ТОО СП «КазГерМунай»
+            </option><option _ngcontent-c4="" value="5">
+                ТОО «АНПЗ»
+            </option><option _ngcontent-c4="" value="6">
+                ТОО «Казахойл Актобе»
+            </option><option _ngcontent-c4="" value="7">
+                ТОО «КазГПЗ»
+            </option><option _ngcontent-c4="" value="2">
+                АО «СНПС-Актобемунайгаз»
+            </option><option _ngcontent-c4="" value="1">
+                ТОО «ПНХЗ»
+            </option><option _ngcontent-c4="" value="8">
+                ТОО «Амангельдинский ГПЗ»
+            </option><option _ngcontent-c4="" value="9">
+                TOO "Gas Processing Company"
+            </option>
+</select>
+</div>
+<div _ngcontent-c4="" class="indexes_body">
+<table _ngcontent-c4="" class="table table-sm table-striped">
+<tbody _ngcontent-c4="">
+<!-- --><!-- -->
+<tr _ngcontent-c4="">
+<td _ngcontent-c4="">Казахстан</td>
+<td _ngcontent-c4="">
+<!-- -->
+<!-- --><!-- -->
+                            45,236.088
+                        
+                    </td>
+</tr>
+<!-- --><tr _ngcontent-c4="">
+<td _ngcontent-c4="">Алматы</td>
+<td _ngcontent-c4="">
+<!-- --><!-- -->
+                            43,345.87
+                        
+                        <!-- -->
+</td>
+</tr><tr _ngcontent-c4="">
+<td _ngcontent-c4="">Атырауская область</td>
+<td _ngcontent-c4="">
+<!-- --><!-- -->
+                            43,345.87
+                        
+                        <!-- -->
+</td>
+</tr><tr _ngcontent-c4="">
+<td _ngcontent-c4="">Мангистауская область</td>
+<td _ngcontent-c4="">
+<!-- -->
+<!-- --><!-- -->-
+                    </td>
+</tr><tr _ngcontent-c4="">
+<td _ngcontent-c4="">Актюбинская область</td>
+<td _ngcontent-c4="">
+<!-- -->
+<!-- --><!-- -->-
+                    </td>
+</tr><tr _ngcontent-c4="">
+<td _ngcontent-c4="">Карагандинская область</td>
+<td _ngcontent-c4="">
+<!-- --><!-- -->
+                            43,345.87
+                        
+                        <!-- -->
+</td>
+</tr><tr _ngcontent-c4="">
+<td _ngcontent-c4="">Жамбылская область</td>
+<td _ngcontent-c4="">
+<!-- --><!-- -->
+                            43,345.87
+                        
+                        <!-- -->
+</td>
+</tr><tr _ngcontent-c4="">
+<td _ngcontent-c4="">Кызылординская область</td>
+<td _ngcontent-c4="">
+<!-- -->
+<!-- --><!-- -->-
+                    </td>
+</tr><tr _ngcontent-c4="">
+<td _ngcontent-c4="">Павлодарская область</td>
+<td _ngcontent-c4="">
+<!-- --><!-- -->
+                            43,345.87
+                        
+                        <!-- -->
+</td>
+</tr><tr _ngcontent-c4="">
+<td _ngcontent-c4="">ЗКО</td>
+<td _ngcontent-c4="">
+<!-- --><!-- -->
+                            43,345.87
+                        
+                        <!-- -->
+</td>
+</tr><tr _ngcontent-c4="">
+<td _ngcontent-c4="">СКО</td>
+<td _ngcontent-c4="">
+<!-- --><!-- -->
+                            43,345.87
+                        
+                        <!-- -->
+</td>
+</tr><tr _ngcontent-c4="">
+<td _ngcontent-c4="">ВКО</td>
+<td _ngcontent-c4="">
+<!-- --><!-- -->
+                            43,345.87
+                        
+                        <!-- -->
+</td>
+</tr><tr _ngcontent-c4="">
+<td _ngcontent-c4="">Костанайская область</td>
+<td _ngcontent-c4="">
+<!-- --><!-- -->
+                            43,345.87
+                        
+                        <!-- -->
+</td>
+</tr><tr _ngcontent-c4="">
+<td _ngcontent-c4="">Акмолинская область</td>
+<td _ngcontent-c4="">
+<!-- -->
+<!-- --><!-- -->-
+                    </td>
+</tr><tr _ngcontent-c4="">
+<td _ngcontent-c4="">Алматинская область</td>
+<td _ngcontent-c4="">
+<!-- --><!-- -->
+                            43,345.87
+                        
+                        <!-- -->
+</td>
+</tr><tr _ngcontent-c4="">
+<td _ngcontent-c4="">Шымкент</td>
+<td _ngcontent-c4="">
+<!-- --><!-- -->
+                            43,345.87
+                        
+                        <!-- -->
+</td>
+</tr><tr _ngcontent-c4="">
+<td _ngcontent-c4="">Туркестанская область</td>
+<td _ngcontent-c4="">
+<!-- --><!-- -->
+                            43,345.87
+                        
+                        <!-- -->
+</td>
+</tr><tr _ngcontent-c4="">
+<td _ngcontent-c4="">Нур-Султан</td>
+<td _ngcontent-c4="">
+<!-- --><!-- -->
+                            43,345.87
+                        
+                        <!-- -->
+</td>
+</tr><tr _ngcontent-c4="">
+<td _ngcontent-c4="">Казахстан</td>
+<td _ngcontent-c4="">
+<!-- --><!-- -->
+                            69,808.92
+                        
+                        <!-- -->
+</td>
+</tr><tr _ngcontent-c4="">
+<td _ngcontent-c4="">Жанаозен, Мангистауская область</td>
+<td _ngcontent-c4="">
+<!-- -->
+<!-- --><!-- -->-
+                    </td>
+</tr><tr _ngcontent-c4="">
+<td _ngcontent-c4="">Актау, Мангистауская область</td>
+<td _ngcontent-c4="">
+<!-- -->
+<!-- --><!-- -->-
+                    </td>
+</tr><tr _ngcontent-c4="">
+<td _ngcontent-c4="">Бейнеуский район, Мангистауская область</td>
+<td _ngcontent-c4="">
+<!-- -->
+<!-- --><!-- -->-
+                    </td>
+</tr><tr _ngcontent-c4="">
+<td _ngcontent-c4="">Мунайлинский район, Мангистауская область</td>
+<td _ngcontent-c4="">
+<!-- -->
+<!-- --><!-- -->-
+                    </td>
+</tr><tr _ngcontent-c4="">
+<td _ngcontent-c4="">Мангистауский район, Мангистауская область</td>
+<td _ngcontent-c4="">
+<!-- -->
+<!-- --><!-- -->-
+                    </td>
+</tr><tr _ngcontent-c4="">
+<td _ngcontent-c4="">Каракиянский район, Мангистауская область</td>
+<td _ngcontent-c4="">
+<!-- -->
+<!-- --><!-- -->-
+                    </td>
+</tr><tr _ngcontent-c4="">
+<td _ngcontent-c4="">Тупкараганский район, Мангистауская область</td>
+<td _ngcontent-c4="">
+<!-- -->
+<!-- --><!-- -->-
+                    </td>
+</tr>
+<!-- -->
+</tbody>
+</table>
+</div>
+</div>
+</app-price-index>
+</div>
+</div>
+</div>
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<app-footer _ngcontent-c1="" _nghost-c10=""><div _ngcontent-c10="" class="section section-footer-info">
+<div _ngcontent-c10="" class="wrapper">
+<div _ngcontent-c10="" class="column">
+<div _ngcontent-c10="" class="column_header">
+<!-- --><!-- -->Продукты
+                <!-- -->
+</div>
+<div _ngcontent-c10="" class="column_body">
+<div _ngcontent-c10="" class="items">
+<!-- --><!-- -->
+<!-- --><div _ngcontent-c10="" class="item">
+                            Бутан
+                        </div><div _ngcontent-c10="" class="item">
+                            Пропан-бутан
+                        </div><div _ngcontent-c10="" class="item">
+                            Пропан-бутан (Ж/Д)
+                        </div><div _ngcontent-c10="" class="item">
+                            Пропан-бутан (Авто)
+                        </div>
+<!-- -->
+</div>
+</div>
+</div>
+<div _ngcontent-c10="" class="column">
+<div _ngcontent-c10="" class="column_header">
+<!-- --><!-- -->Условия поставки
+                <!-- -->
+</div>
+<div _ngcontent-c10="" class="column_body">
+<div _ngcontent-c10="" class="items">
+<!-- --><!-- -->
+<!-- --><div _ngcontent-c10="" class="item">
+                            DAP - Поставка без оплаты пошлины
+                        </div><div _ngcontent-c10="" class="item">
+                            DDP - Поставка с оплатой пошлины
+                        </div><div _ngcontent-c10="" class="item">
+                            EXW - Франко завод
+                        </div><div _ngcontent-c10="" class="item">
+                            FCA - Франко перевозчик
+                        </div><div _ngcontent-c10="" class="item">
+                            CPT - Перевозка оплачена
+                        </div><div _ngcontent-c10="" class="item">
+                            FAS - Свободно вдоль борта судна
+                        </div><div _ngcontent-c10="" class="item">
+                            FOB - Свободно на борту
+                        </div><div _ngcontent-c10="" class="item">
+                            CFR - Стоимость и фрахт
+                        </div><div _ngcontent-c10="" class="item">
+                            CIF - Стоимость, страхование и фрахт
+                        </div><div _ngcontent-c10="" class="item">
+                            CIT - Перевозка и страхование оплачены
+                        </div><div _ngcontent-c10="" class="item">
+                            DAT - Поставка без оплаты пошлины
+                        </div>
+<!-- -->
+</div>
+</div>
+</div>
+<div _ngcontent-c10="" class="column">
+<div _ngcontent-c10="" class="column_header">
+</div>
+<div _ngcontent-c10="" class="column_body">
+<div _ngcontent-c10="" class="items">
+<!-- -->
+<div _ngcontent-c10="" class="item"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div _ngcontent-c10="" class="section section-footer">
+<div _ngcontent-c10="" class="wrapper">
+<div _ngcontent-c10="" class="logo">
+<img _ngcontent-c10="" routerlink="/" src="/assets/images/logo.svg" tabindex="0"/>
+</div>
+<div _ngcontent-c10="" class="address">
+<!-- --><!-- -->
+<div _ngcontent-c10="" class="yellow">Адрес:</div>
+<div _ngcontent-c10="">г.Алматы, ул.Достык 192/2, 2 этаж</div>
+<div _ngcontent-c10="">БЦ "Green Tower"</div>
+<!-- -->
+</div>
+<div _ngcontent-c10="" class="contacts">
+<div _ngcontent-c10="" class="yellow">Контакты:</div>
+<div _ngcontent-c10="">
+<a _ngcontent-c10="" href="tel:+77273443037">+7 (727) 344 30 37</a>
+</div>
+<div _ngcontent-c10=""><a _ngcontent-c10="" href="mailto: info@alantrade.kz">info@alan-trade.kz</a></div>
+</div>
+<div _ngcontent-c10="" class="invest">
+<a _ngcontent-c10="" href="http://alan-trade.kz/" target="_blank">www.alan-trade.kz</a>
+</div>
+</div>
+</div>
+<div _ngcontent-c10="" class="section section-copyright">
+<div _ngcontent-c10="" class="wrapper">
+<div _ngcontent-c10="" class="copyright">
+<!-- --><!-- -->
+                Все права защищены © TOO IT Tech Park 2019
+            
+            <!-- -->
+</div>
+</div>
+</div>
+</app-footer>
+</app-page>
+</app-root><!--&lt;!&ndash; Yandex.Metrika counter &ndash;&gt;--><!--<script type="text/javascript" >--><!--    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};--><!--        m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})--><!--    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");--><!--    ym(54028960, "init", {--><!--        clickmap:true,--><!--        trackLinks:true,--><!--        accurateTrackBounce:true,--><!--        webvisor:true--><!--    });--><!--</script>--><!--<noscript><div><img src="https://mc.yandex.ru/watch/54028960" style="position:absolute; left:-9999px;" alt="" /></div></noscript>--><!--&lt;!&ndash; /Yandex.Metrika counter &ndash;&gt;--><script src="inline.6e83dd1ed59b83deff33.bundle.js" type="text/javascript"></script><script src="polyfills.7b9c1df4af6f038cb67b.bundle.js" type="text/javascript"></script><script src="scripts.04da452afd00bffae5fb.bundle.js" type="text/javascript"></script><script src="main.868b4a1ad3ab6c85799a.bundle.js" type="text/javascript"></script></body></html>
