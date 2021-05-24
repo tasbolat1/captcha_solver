@@ -48,20 +48,16 @@ train_dataset = CaptchaDataset2(Path(args.data_dir)/ f'train')
 val_dataset = CaptchaDataset2(Path(args.data_dir)/ f'test')
 test_dataset = CaptchaDataset2(Path(args.data_dir)/ f'original')
 
-
 train_loader = torch.utils.data.DataLoader(train_dataset, batch_size=batch_size, shuffle=True)
 val_loader = torch.utils.data.DataLoader(val_dataset, batch_size=batch_size, shuffle=False)
 test_loader = torch.utils.data.DataLoader(test_dataset, batch_size=batch_size, shuffle=False)
 
 device = torch.device('cuda:2' if torch.cuda.is_available() else 'cpu')
 
-
 BLANK_LABEL = total_chars
     
 net = CaptchaModel(hidden_size=hidden_size).to(device)
 #net.load_state_dict(torch.load('models/v5_50.pt'))
-
-
 
 optimizer = torch.optim.Adam(net.parameters(), lr=lr)
 criterion = nn.CTCLoss(blank=BLANK_LABEL)
@@ -79,7 +75,6 @@ for epoch in range(1, epochs+1):
     batch_size, channels, height, width = inputs.shape
     optimizer.zero_grad()  # zero the parameter gradients
     outputs = net(inputs)  # forward pass
-
 
     # compare output with ground truth
     input_lengths = torch.IntTensor(batch_size).fill_(outputs.shape[0])
@@ -114,7 +109,6 @@ for epoch in range(1, epochs+1):
     
     train_loss, train_correct, train_total = 0, 0, 0
           
-  
   # validation
   net.eval()
   val_loss, val_correct, val_total = 0, 0, 0
@@ -123,7 +117,6 @@ for epoch in range(1, epochs+1):
   for batch_index, (inputs, targets) in enumerate(val_loader):
     inputs = inputs.to(device)
     batch_size, channels, height, width = inputs.shape
-
             
     outputs = net(inputs)  # forward pass
     input_lengths = torch.IntTensor(batch_size).fill_(outputs.shape[0])

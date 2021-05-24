@@ -11,3 +11,5 @@ data/**/*.npy
 
 learning/models/*.pt
 learning/models/*.pt
+
+learning/cnn_logs/*.pt

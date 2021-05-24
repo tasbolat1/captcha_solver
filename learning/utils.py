@@ -179,10 +179,11 @@ class CaptchaModel(nn.Module):
         #print('input', inputs.size())
         
         # convolution part
-        x = F.relu(self.conv1(inputs)) # 128, 30, 140
+        x = F.relu(self.conv1(inputs))  # 128, 30, 140
         # print('conv1', x.size())
         x = self.max_pool1(x) # 128, 15, 70
         # print('max1', x.size())
+        
         x = F.relu(self.conv2(x)) # 64, 15, 70
         # print('conv2', x.size())
         x = self.max_pool2(x) # 64, 7, 35
@@ -202,7 +203,122 @@ class CaptchaModel(nn.Module):
         # print('gru ', x.size())
         a, bs, b = x.size()
         # x = self.fc(x)
-        # print('fc', x.size())        
+        # print('fc', x.size())
+        
+        outputs = torch.stack([self.fc(x[i]) for i in range(a)])
+        outputs = F.log_softmax(outputs, dim=2)
+        
+        #print('outputs ', outputs.size())
+        return outputs
+    
+    
+class CaptchaModelBNLight(nn.Module):
+    def __init__(self, input_size=30, output_size=total_chars+1, hidden_size=64, num_layers=2):
+        super(CaptchaModelBNLight, self).__init__()
+        self.conv1 = nn.Conv2d(1, 256, kernel_size=3, padding=1)
+        self.max_pool1 = nn.MaxPool2d(kernel_size=(2,2))
+        self.batchnorm1 = nn.BatchNorm2d(256)
+        
+        self.conv2 = nn.Conv2d(256, 128, kernel_size=3, padding=1)
+        self.max_pool2 = nn.MaxPool2d(kernel_size=(2,2))
+        self.batchnorm2 = nn.BatchNorm2d(128)
+        
+        self.linear1 = nn.Linear(896, hidden_size)
+        
+        
+        self.drop1 = nn.Dropout()
+        
+        self.gru = nn.GRU(hidden_size, int(hidden_size/2), bidirectional=True, num_layers=num_layers, dropout=0.5)
+        self.fc = nn.Linear(hidden_size, output_size)
+        
+    def forward(self, inputs):
+        batch_size, c, seq_len, input_size = inputs.shape
+        #print('input', inputs.size())
+        
+        # convolution part
+        x = F.relu(self.batchnorm1( self.conv1(inputs)) ) # 128, 30, 140
+        # print('conv1', x.size())
+        x = self.max_pool1(x) # 128, 15, 70
+        # print('max1', x.size())
+        
+        x = F.relu(self.batchnorm2( self.conv2(x)) )# 64, 15, 70
+        # print('conv2', x.size())
+        x = self.max_pool2(x) # 64, 7, 35
+        # print('max2', x.size())
+        
+        # rnn part
+        x = x.permute(0,3,1,2) # 35, 64, 7
+        # print('permute ', x.size())
+        x = x.view(batch_size, x.size(1), -1)
+        # print('view ', x.size())
+        x = self.linear1(x)
+        x = self.drop1(x)
+        # print('linear1 ', x.size())
+        x,_ = self.gru(x)
+        
+        x = x.permute(1,0,2)
+        # print('gru ', x.size())
+        a, bs, b = x.size()
+        # x = self.fc(x)
+        # print('fc', x.size())
+        
+        outputs = torch.stack([self.fc(x[i]) for i in range(a)])
+        outputs = F.log_softmax(outputs, dim=2)
+        
+        #print('outputs ', outputs.size())
+        return outputs
+
+    
+class CaptchaModelBN(nn.Module):
+    def __init__(self, input_size=30, output_size=total_chars+1, hidden_size=64, num_layers=2):
+        super(CaptchaModelBN, self).__init__()
+        self.conv1 = nn.Conv2d(1, 512, kernel_size=3, padding=1)
+        self.max_pool1 = nn.MaxPool2d(kernel_size=(2,2))
+        self.batchnorm1 = nn.BatchNorm2d(512)
+        
+        self.conv2 = nn.Conv2d(512, 256, kernel_size=3, padding=1)
+        self.max_pool2 = nn.MaxPool2d(kernel_size=(2,2))
+        self.batchnorm2 = nn.BatchNorm2d(256)
+        
+        self.linear1 = nn.Linear(896*2, hidden_size)
+        
+        
+        self.drop1 = nn.Dropout()
+        
+        self.gru = nn.GRU(hidden_size, int(hidden_size/2), bidirectional=True, num_layers=num_layers, dropout=0.5)
+        self.fc = nn.Linear(hidden_size, output_size)
+        
+    def forward(self, inputs):
+        batch_size, c, seq_len, input_size = inputs.shape
+        #print('input', inputs.size())
+        
+        # convolution part
+        x = F.relu(self.batchnorm1( self.conv1(inputs)) ) # 128, 30, 140
+        # print('conv1', x.size())
+        x = self.max_pool1(x) # 128, 15, 70
+        # print('max1', x.size())
+        
+        x = F.relu(self.batchnorm2( self.conv2(x)) )# 64, 15, 70
+        # print('conv2', x.size())
+        x = self.max_pool2(x) # 64, 7, 35
+        # print('max2', x.size())
+        
+        # rnn part
+        x = x.permute(0,3,1,2) # 35, 64, 7
+        # print('permute ', x.size())
+        x = x.view(batch_size, x.size(1), -1)
+        # print('view ', x.size())
+        x = self.linear1(x)
+        x = self.drop1(x)
+        # print('linear1 ', x.size())
+        x,_ = self.gru(x)
+        
+        x = x.permute(1,0,2)
+        # print('gru ', x.size())
+        a, bs, b = x.size()
+        # x = self.fc(x)
+        # print('fc', x.size())
+        
         outputs = torch.stack([self.fc(x[i]) for i in range(a)])
         outputs = F.log_softmax(outputs, dim=2)
         
